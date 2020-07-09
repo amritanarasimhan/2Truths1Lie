@@ -1,0 +1,32 @@
+body {
+    height: 600px;
+    background-color: lightblue; /* For browsers that do not support gradients */
+    background-image: linear-gradient(lightblue, lightgreen); /* Standard syntax (must be last) */
+  }
+  h1 {
+    color: black;
+    text-align:center;
+    text-shadow: 2px 2px 5px lightseagreen;
+    font-size: 300%;
+  }
+  p {
+    color:black;
+    text-align:center;
+    font-size: 160%;
+  }
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%; 
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
